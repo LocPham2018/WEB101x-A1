@@ -1,0 +1,49 @@
+﻿<html>
+
+  <head>
+    <style>
+      p {
+        line-height: 0.1;
+      }
+
+      button {
+        float: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Ứng dụng thu thập thông tin cá nhân</h1>
+    <p id="name"></p>
+    <script>
+      window.alert('Chào mừng đến với ứng dụng Javascript đầu tiên!');
+      var person = prompt('Hãy nhập tên của bạn', '');
+      if (person != null || person != '') {
+        document.getElementById("name").innerHTML = 'Tên của bạn: ' + person.bold();
+      }
+    </script>
+
+    <p id="place"></p>
+    <script>
+      var place = prompt('Hãy nhập thành phố bạn đang sống', '');
+      if (place != null || place != '') {
+        document.getElementById("place").innerHTML = 'Thành phố: ' + place.bold();
+      }
+    </script>
+
+    <p id="phone"></p>
+    <script>
+      var phone = prompt('Hãy nhập số điện thoại của bạn', '');
+      if (phone != null || phone != '') {
+        document.getElementById("phone").innerHTML = 'Điện thoại: ' + phone.bold();
+      }
+    </script>
+
+    <script>
+      window.alert('Cảm ơn bạn đã cung cấp thông tin!');
+    </script>
+
+    <button>Bước tiếp theo</button>
+  </body>
+
+</html>
